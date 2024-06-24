@@ -1,0 +1,104 @@
+/* navabar section  */
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background: #080808;
+    border-radius: 23%;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(125, 151, 8);
+    border-radius: 23%;
+}
+.nav{
+    background: rgb(53, 1, 95);
+    margin-bottom: 34px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* coding section  */
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cheatSheet{
+    width: 70vw;
+    background: #272822;
+    border-radius: 3%;
+    color: white;
+    font-weight: bold;
+    font-size:larger;
+    overflow-x: auto;
+    margin-bottom: 34px;
+}
+code[class= "dTypes"]{
+    color: rgb(104 179 229);
+}
+.lib{
+    color: red;
+}
+.output{
+    color: rgb(197, 129, 27);
+}
+.comment{
+    color: rgb(114 153 57);
+}
+.cond{
+    color: rgb(35, 167, 167);
+}
+.btn{
+    position: relative;
+    left: -100px;
+    display: none;
+    cursor: pointer;
+    background: #383737;
+    border-radius: 50%;
+    padding: 3px;
+    color: rgb(166, 168, 27);
+    border: 2px solid rgb(104 179 229) ;
+}
+.btn1{
+    left: -170px;
+}
+.cheatSheet:hover{
+    .btn{
+        display: inline;
+    }
+}
+@media (max-width:536px) {
+    .cheatSheet>div{
+        margin-left: -80px;
+    }
+    .heading{
+        font-size: medium;
+    }
+    .btn1{
+        left: -93px !important;
+    }
+    .btn{
+        left: -23px;
+    }
+}
+@media (max-width:400px) {
+    .cheatSheet{
+        width: 70vw;
+    }
+    .btn1{
+        left: -53px !important;
+    }
+    .btn{
+        left: -3px;
+    }
+    .heading{
+        font-size: small;
+    }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheatSheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navbar section  -->
+    <nav class="nav">
+        <h1>CheatSheat of cpp</h1>
+
+    </nav>
+
+
+    <!-- boiler plate  -->
+    <div class="heading">
+        <h1>Cpp boiler plate</h1>
+        <div class="cheatSheet">
+            <div>
+
+                <pre>
+            <button class="btn">Copy</button>
+            #<code class="lib">include</code>&lt;iostream&gt;
+
+            <code class="dTypes">int</code> main() {
+            std::cout&lt;&lt;<span class="output">"Hello world"</span> ;
+            return 0;
+            }  
+                </pre>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- global variable  -->
+    <div class="heading">
+        <h1>Global variable scope</h1>
+        <div class="cheatSheet">
+            <div>
+
+                <pre>
+                    <button class="btn btn1">Copy</button>
+            #<code class="lib">include</code>&lt;iostream&gt;
+            using namespace std;
+
+            <code class="dTypes">int </code>global = 7 ;
+
+            <code class="dTypes">int</code> main() {
+            cout&lt;&lt;global ;
+            return 0;
+            }  
+                </pre>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- logical operators  -->
+    <div class="heading">
+        <h1>Logical Operators</h1>
+        <div class="cheatSheet">
+            <div>
+
+                <pre>
+                    <button class="btn btn1">Copy</button>
+            #<code class="lib">include</code>&lt;iostream&gt;
+            using namespace std;
+
+            <code class="dTypes">int</code> main() {
+            <code class="dTypes">bool </code>condition1 = <span class="lib">true</span>, condition2= <span class="lib">false</span>;
+            <code class="dTypes">bool </code>logicalAndResult = condition1 && condition2;
+            <code class="dTypes">bool </code>logicalOrResult = condition1 || condition2;
+            <code class="dTypes">bool </code>logicalNotResult = !condition1;
+
+            cout&lt;&lt;<span class="output">"The result of logicalAndResult is " </span>&lt;&lt;logicalAndResult&lt;&lt;endl ;
+            cout&lt;&lt;<span class="output">"The result of logicalOrResult is " </span>&lt;&lt;logicalOrResult&lt;&lt;endl ;
+            cout&lt;&lt;<span class="output">"The result of logicalNotResult is " </span>&lt;&lt;logicalNotResult&lt;&lt;endl ;
+            return 0;
+            }  
+                </pre>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- reference variable  -->
+    <div class="heading">
+        <h1>Reference Variable</h1>
+        <div class="cheatSheet">
+            <div>
+
+                <pre>
+                    <button class="btn btn1">Copy</button>
+            #<code class="lib">include</code>&lt;iostream&gt;
+            using namespace std;
+
+            <code class="dTypes">int</code> main() {
+                <code class="dTypes">int</code> x = 10 ;
+                <code class="dTypes">int</code> &y = x ; <span class="comment">//Reference of x to y</span>
+
+            cout&lt;&lt;x&lt;&lt;endl ;
+            cout&lt;&lt;y&lt;&lt;endl ;
+            return 0;
+            }  
+                </pre>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Arrays  -->
+    <div class="heading">
+        <h1>Arrays</h1>
+        <div class="cheatSheet">
+            <div>
+
+                <pre>
+                    <button class="btn btn1">Copy</button>
+            #<code class="lib">include</code>&lt;iostream&gt;
+            using namespace std;
+
+            <code class="dTypes">int</code> main() {
+                <code class="dTypes">int</code> nums[5] = {1,2,3,4,5};
+
+            cout&lt;&lt;nums[1]&lt;&lt;endl ;
+            return 0;
+            }  
+                </pre>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Passing Array to function  -->
+    <div class="heading">
+        <h1>Passing Array to function</h1>
+        <div class="cheatSheet">
+            <div>
+
+                <pre>
+                    <button class="btn btn1">Copy</button>
+            #<code class="lib">include</code>&lt;iostream&gt;
+            using namespace std;
+
+            void <code class="lib">PrintArray</code>(<code class="dTypes">int</code> arr[] , <code class="dTypes">int</code> size){
+                <span class="cond">for</span>(<code class="dTypes">int</code> i = 0 ; i&lt; size ; i++){
+                    cout&lt;&lt; arr[i]&lt;&lt;<span class="output">" "</span> ;
+                }
+
+            }
+
+            <code class="dTypes">int</code> main() {
+                <code class="dTypes">int</code> nums[5] = {1,2,3,4,5};
+
+            <code class="lib">PrintArray</code>(nums , 5);
+            return 0;
+            }  
+                </pre>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Multi Dimentional Array   -->
+    <div class="heading">
+        <h1>Multi Dimentional Array</h1>
+        <div class="cheatSheet">
+            <div>
+
+                <pre>
+                    <button class="btn btn1">Copy</button>
+            #<code class="lib">include</code>&lt;iostream&gt;
+            using namespace std;
+
+            <code class="dTypes">int</code> main() {
+                <code class="dTypes">int</code> matrix[3][3] = {
+                    {1,2,3},
+                    {4,5,6},
+                    {7,8,9},
+                };
+
+            <span class="cond">for</span>(<code class="dTypes">int</code> i = 0 ; i&lt; 3 ; i++){
+                <span class="cond">for</span>(<code class="dTypes">int</code> j = 0 ; j&lt; 3 ; j++){
+                cout&lt;&lt; matrix[i][j]&lt;&lt;<span class="output">" "</span> ;
+                cout&lt;&lt;endl;
+                }
+            }
+            
+            return 0;
+            }  
+                </pre>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
